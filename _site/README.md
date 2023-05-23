@@ -1,6 +1,6 @@
 # Docs is a premium documentation Jekyll theme
 
-Desk was developed by [Unbound Studio](https://unbound.studio).
+Desk was developed by [Ivan Chromjak](https://ivanchromjak.com) for [jekyll.plus](https://jekyll.plus/), theme [live demo](https://docs.jekyll.plus/) available.
 
 ## Installation
 
@@ -34,7 +34,7 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                ""
+url:                "https://docs.jekyll.plus"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
@@ -83,7 +83,7 @@ bundle exec jekyll s --livereload
 - Jekyll CML https://jekyllrb.com/
 
 ## Support
-Customer support is provided through our Envato item page [contact form](https://themeforest.net/item/docs-responsive-documentation-manual-jekyll-theme/21131076/support) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 24h.
+Customer support is provided through our Envato profile page [contact form](https://themeforest.net/item/docs-responsive-documentation-manual-jekyll-theme/21131076/support) for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 24h.
 
 ## Documentation
-Full documentation can be found here: [https://jekyll-theme-docs.netlify.com/docs/installation/](https://jekyll-theme-docs.netlify.com/docs/installation/).
+Full documentation can be found here: [https://docs.jekyll.plus/](https://docs.jekyll.plus/).
