@@ -19,7 +19,7 @@ permalink:          /:title/
 url:                "https://generatedart.com"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:            https://github.com/GeneratedArt/docs/blob/d7875280aa1551a739fff6ff262af64490ab7be1/uploads/generatedart-logo-docs.png  
+logo:            generatedart-logo-docs.png  
 
 navbar:
     sticky:         true
