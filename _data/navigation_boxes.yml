@@ -5,12 +5,12 @@
   icon: cog
   doc: installation
 
-- title: Theme Features
+- title: Using Discord
   desc: Lean about all the theme options, features and how to use them
   icon: settings
   doc: hero
 
-- title: Customization
+- title: User Guide
   desc: Get help or tailor the theme to your specific requirements
   icon: code
   doc: customize
