@@ -7,9 +7,6 @@ left:
   - title: Docs
     url: /docs/installation/
 
-  - title: Blog
-    url: /blog/
-
   - title: Changelogs
     dropdown:
 
