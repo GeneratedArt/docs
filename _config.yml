@@ -5,7 +5,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site title and description
-title:              Docs
+title:              GeneratedArt Docs
 description:        Documentation Jekyll theme.
 lang:               en
 
@@ -16,7 +16,7 @@ baseurl:            ""
 permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                ""
+url:                "https://generatedart.com"
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
@@ -62,28 +62,28 @@ authors:
 social:
     email:
     website:
-    facebook:       https://www.facebook.com/
+    facebook:       https://www.facebook.com/geneatedart
     flickr:
     dribbble:
     github:
     googleplus:
-    instagram:      https://www.instagram.com/
-    linkedin:
+    instagram:      https://www.instagram.com/generatedart
+    linkedin:       https://www.instagram.com/generatedart
     pinterest:
-    twitter:        https://twitter.com/
-    vimeo:          https://vimeo.com/
-    youtube:
+    twitter:        https://twitter.com/generatedart
+    vimeo:          
+    youtube:        https://www.youtube.com/@generatedart
 
 # Share button
 share:
     post:           true # Display share buttons on a post page
     doc:            true # Display share buttons on a doc page
-    twitter:        username # Enable by adding Twitter handle 
+    twitter:        generatedart # Enable by adding Twitter handle 
     facebook:       true # Enable by setting true (Facebook handle not required)
 
 # Default footer image settings
 footer:
-    copyright:      Made by <a href="https://unbound.studio/">Unbound Studio</a> in Cleveland.
+    copyright:      Copyright © 2023 <a href="https://generatedart.com/">GeneratedArt</a>. All rights reserved.
 
 # Disqus comments shortname, requires Disqus account https://disqus.com/
 disqus:
