@@ -111,3 +111,199 @@ for _ in range(num_generations):
 
     cells = next_gen
 ```
+
+3. JavaScript:
+
+```javascript
+const numCells = 100;
+const cellSize = 5;
+const numGenerations = 100;
+const rule = 30;
+
+let cells = new Array(numCells).fill(0);
+let next = new Array(numCells).fill(0);
+
+cells[Math.floor(numCells / 2)] = 1;
+
+for (let generation = 0; generation < numGenerations; generation++) {
+  for (let i = 0; i < numCells; i++) {
+    // Visualize the cells here using your preferred graphics library or HTML canvas
+    // For example, you can create HTML elements or manipulate pixels on a canvas
+  }
+
+  generateNextGeneration();
+}
+
+function generateNextGeneration() {
+  for (let i = 1; i < numCells - 1; i++) {
+    const left = cells[i - 1];
+    const middle = cells[i];
+    const right = cells[i + 1];
+    next[i] = applyRule(left, middle, right);
+  }
+
+  [cells, next] = [next, cells];
+}
+
+function applyRule(a, b, c) {
+  const index = 7 - (a << 2 | b << 1 | c);
+  return (rule >> index) & 1;
+}
+```
+
+4. C++:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+const int numCells = 100;
+const int numGenerations = 100;
+const int rule = 30;
+
+std::vector<int> cells(numCells);
+std::vector<int> next(numCells);
+
+void generateNextGeneration() {
+  for (int i = 1; i < numCells - 1; i++) {
+    int left = cells[i - 1];
+    int middle = cells[i];
+    int right = cells[i + 1];
+    next[i] = applyRule(left, middle, right);
+  }
+
+  cells = next;
+}
+
+int applyRule(int a, int b, int c) {
+  int index = 7 - (a << 2 | b << 1 | c);
+  return (rule >> index) & 1;
+}
+
+int main() {
+  cells[numCells / 2] = 1;
+
+  for (int generation = 0; generation < numGenerations; generation++) {
+    for (int i = 0; i < numCells; i++) {
+      // Visualize the cells here using your preferred graphics library or ASCII art
+      // For example, you can print '*' for alive cells and ' ' for dead cells
+      std::cout << (cells[i] ? '*' : ' ');
+    }
+    std::cout << std::endl;
+
+    generateNextGeneration();
+  }
+
+  return 0;
+}
+```
+
+5. Java:
+
+```java
+import java.util.Arrays;
+
+public class CellularAutomata {
+    public static void main(String[] args) {
+        int numCells = 100;
+        int numGenerations = 100;
+        int rule = 30;
+
+        int[] cells = new int[numCells];
+        int[] next = new int[numCells];
+
+        cells[numCells / 2] = 1;
+
+        for (int generation = 0; generation < numGenerations; generation++) {
+            for (int i = 0; i < numCells; i++) {
+                // Visualize the cells here using your preferred graphics library or ASCII art
+                // For example, you can print '*' for alive cells and ' ' for dead cells
+                System.out.print(cells[i] == 1 ? '*' : ' ');
+            }
+            System.out.println();
+
+            generateNextGeneration(cells, next, rule);
+
+            int[] temp = cells;
+            cells = next;
+            next = temp;
+        }
+    }
+
+    private static void generateNextGeneration(int[] cells, int[] next, int rule) {
+        for (int i = 1; i < cells.length - 1; i++) {
+            int left = cells[i - 1];
+            int middle = cells[i];
+            int right = cells[i + 1];
+            next[i] = applyRule(left, middle, right, rule);
+        }
+    }
+
+    private static int applyRule(int left, int middle, int right, int rule) {
+        int index = 7 - (left << 2 | middle << 1 | right);
+        return (rule >> index) & 1;
+    }
+}
+```
+
+6. Unity/C#:
+
+```csharp
+using UnityEngine;
+
+public class CellularAutomata : MonoBehaviour
+{
+    public int numCells = 100;
+    public int numGenerations = 100;
+    public int rule = 30;
+    public GameObject cellPrefab;
+    public float cellSize = 0.5f;
+
+    private int[] cells;
+    private int[] next;
+
+    private void Start()
+    {
+        cells = new int[numCells];
+        next = new int[numCells];
+
+        cells[numCells / 2] = 1;
+
+        for (int generation = 0; generation < numGenerations; generation++)
+        {
+            for (int i = 0; i < numCells; i++)
+            {
+                // Instantiate or update GameObjects representing the cells at their positions
+                if (cells[i] == 1)
+                {
+                    Vector3 position = new Vector3(i * cellSize, generation * cellSize, 0f);
+                    Instantiate(cellPrefab, position, Quaternion.identity);
+                }
+            }
+
+            generateNextGeneration();
+        }
+    }
+
+    private void generateNextGeneration()
+    {
+        for (int i = 1; i < numCells - 1; i++)
+        {
+            int left = cells[i - 1];
+            int middle = cells[i];
+            int right = cells[i + 1];
+            next[i] = applyRule(left, middle, right);
+        }
+
+        int[] temp = cells;
+        cells = next;
+        next = temp;
+    }
+
+    private int applyRule(int left, int middle, int right)
+    {
+        int index = 7 - (left << 2 | middle << 1 | right);
+        return (rule >> index) & 1;
+    }
+}
+```
