@@ -31,7 +31,7 @@ Generative artists often experiment with different rule sets, grid sizes, bounda
 
 Examples:
 
-1. Processing (Java-based language for visual arts):
+Processing:
 
 ```java
 int[] cells;
@@ -84,8 +84,7 @@ int applyRule(int a, int b, int c) {
   return (rule >> index) & 1;
 }
 ```
-
-2. Python:
+Python:
 
 ```python
 import numpy as np
@@ -111,8 +110,7 @@ for _ in range(num_generations):
 
     cells = next_gen
 ```
-
-3. JavaScript:
+JavaScript:
 
 ```javascript
 const numCells = 100;
@@ -150,8 +148,7 @@ function applyRule(a, b, c) {
   return (rule >> index) & 1;
 }
 ```
-
-4. C++:
+C++:
 
 ```cpp
 #include <iostream>
@@ -197,8 +194,7 @@ int main() {
   return 0;
 }
 ```
-
-5. Java:
+Java:
 
 ```java
 import java.util.Arrays;
@@ -245,8 +241,7 @@ public class CellularAutomata {
     }
 }
 ```
-
-6. Unity/C#:
+Unity/C#:
 
 ```csharp
 using UnityEngine;
