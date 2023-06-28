@@ -5,31 +5,27 @@ tags: [algorithm]
 author:
 ---
 
-Cellular Automata (CA) is a computational model consisting of a grid of cells, each having a state that evolves over discrete time steps based on a set of predefined rules. These rules determine how the states of the cells change in response to the states of their neighboring cells. CA can exhibit complex and emergent behavior, often resulting in visually interesting patterns and dynamic systems.
+Cellular Automata is a computational model consisting of a grid of cells, where each cell's state is updated based on a set of predefined rules and the states of its neighboring cells. The state of each cell evolves over discrete time steps, making it a dynamic and iterative system. Cellular Automata can exhibit complex patterns and behavior emerging from simple local interactions.
 
-In a one-dimensional CA, each cell has two neighbors (one on each side), and the state of a cell at time t+1 depends on the state of the cell and its neighbors at time t. This relationship can be expressed using mathematical formulas, where the next state of a cell is determined based on the current states of its neighboring cells.
+Examples of math formulas used in Cellular Automata include:
 
-Here are a few examples of mathematical formulas used in Cellular Automata:
+1. Conway's Game of Life: One of the most well-known cellular automata, where each cell follows the following rules:
+   - Any live cell with fewer than two live neighbors dies (underpopulation).
+   - Any live cell with two or three live neighbors survives.
+   - Any live cell with more than three live neighbors dies (overpopulation).
+   - Any dead cell with exactly three live neighbors becomes alive (reproduction).
 
-1. Rule 30: The next state of a cell is the XOR (exclusive OR) of its left neighbor, itself, and its right neighbor.
+2. Elementary Cellular Automaton: A one-dimensional cellular automaton with a binary state (0 or 1), where the next state of each cell is determined by a lookup table specifying the rules based on its current state and the states of its two neighbors.
 
-2. Rule 110: The next state of a cell is determined by a specific lookup table that considers the state of the cell and its neighbors.
+Algorithms that derive from Cellular Automata include:
 
-3. Game of Life: This is a famous CA developed by John Conway. It has specific rules based on the number of neighboring live cells that determine whether a cell lives, dies, or is born in the next generation.
+1. Rule-based Systems: Cellular Automata can be used as a basis for creating rule-based systems, where the behavior or evolution of a system is defined by a set of rules applied to individual components or cells.
 
-Generative artists can utilize Cellular Automata in various ways to create visual art. Some common approaches include:
+2. Generative Systems: Cellular Automata can be used as generative algorithms to create patterns, structures, or textures in generative art. By defining rules that govern the state transitions of cells and mapping them to visual elements, artists can generate complex and visually appealing compositions.
 
-1. Visual Patterns: Artists can explore different rule sets and initial configurations to generate intricate visual patterns, ranging from simple repetitive structures to complex and evolving forms.
+3. Complex Systems Modeling: Cellular Automata provide a way to model and simulate complex systems in various domains such as physics, biology, social sciences, and more. By defining rules that mimic the behavior of real-world phenomena, cellular automata can be used to study and understand emergent behavior in these systems.
 
-2. Abstract Art: By mapping the state of each cell to visual attributes such as color, shape, or texture, artists can create abstract artworks that exhibit self-organization and emergent behavior.
-
-3. Texture Generation: Cellular Automata can be used to generate textures that can be applied to surfaces or used as backgrounds in digital art or design.
-
-4. Animation: By evolving the state of the cells over time, artists can create animations that showcase the dynamic behavior and evolution of the Cellular Automata patterns.
-
-Generative artists often experiment with different rule sets, grid sizes, boundary conditions, and visualization techniques to create unique and visually captivating artworks using Cellular Automata. The iterative nature of CA lends itself well to generative art, allowing artists to explore and discover intriguing patterns and dynamics within the system.
-
-Examples:
+In Generative Art, Cellular Automata can be used to create visually captivating and intricate patterns. Artists can design rules that govern the cell states, and the resulting patterns can be visualized and interpreted in various ways. Cellular Automata can be used to generate artwork, digital images, animations, or interactive installations by mapping cell states to colors, shapes, textures, or movements. Artists can experiment with different rules, initial configurations, or parameter values to explore the vast creative possibilities and produce unique generative art pieces.
 
 Processing:
 
