@@ -9,7 +9,7 @@
   - comments
   - analytics
 
-- title: Theme Features
+- title: Using Discord
   docs:
   - hero
   - boxes
@@ -24,9 +24,15 @@
   - toc
   - alerts
 
-- title: Customization
+- title: Algorithm Development
   docs:
   - translation
+  - customize
+  - development
+  - sources
+- title: Algorithm Development
+  docs:
+  - Cellular Automata
   - customize
   - development
   - sources
