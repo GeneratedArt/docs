@@ -144,8 +144,6 @@ plt.imshow(fractal_img, cmap='hot', extent=[minR, maxR, minI, maxI])
 plt.show()
 ```
 
-Certainly! Here are code examples of generating fractals using JavaScript and C++:
-
 JavaScript:
 
 ```javascript
