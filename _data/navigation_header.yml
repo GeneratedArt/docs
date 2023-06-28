@@ -1,11 +1,31 @@
 # Navbar left menu navigation links
 
 left:
-  - title: Home
-    url: /
+  - title: Main
+    url: https://generatedart.com
 
-  - title: Docs
-    url: /docs/installation/
+  - title: Expo
+    url: https://expo.generatedart.com
+    dropdown:
+
+      - title: About
+        url: https://expo.generatedart.com/about/
+
+      - title: Services
+        url: https://expo.generatedart.com/services/
+    
+  - title: Deco
+    url: https://deco.generatedart.com
+    dropdown:
+
+      - title: About
+        url: https://deco.generatedart.com/about/
+
+      - title: Services
+        url: https://deco.generatedart.com/services/
+
+  - title: Shop
+    url: https://shop.generatedart.com
 
   - title: Changelogs
     dropdown:
